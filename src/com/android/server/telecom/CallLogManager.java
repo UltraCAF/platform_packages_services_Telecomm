@@ -486,21 +486,18 @@ public final class CallLogManager extends CallsManagerListenerBase {
                 if(isWifiCall) {
                     callLogType = Calls.INCOMING_WIFI_TYPE;
                 } else {
-                    callLogType = Calls.INCOMING_IMS_TYPE;
                 }
                 break;
             case Calls.OUTGOING_TYPE :
                 if(isWifiCall) {
                     callLogType = Calls.OUTGOING_WIFI_TYPE;
                 } else {
-                    callLogType = Calls.OUTGOING_IMS_TYPE;
                 }
                 break;
             case Calls.MISSED_TYPE :
                 if(isWifiCall) {
                     callLogType = Calls.MISSED_WIFI_TYPE;
                 } else {
-                    callLogType = Calls.MISSED_IMS_TYPE;
                 }
                 break;
             default:

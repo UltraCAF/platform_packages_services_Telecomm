@@ -643,8 +643,6 @@ public class MissedCallNotifierImpl extends CallsManagerListenerBase implements 
         StringBuilder where = new StringBuilder("(type=");
         where.append(Calls.MISSED_TYPE);
         where.append(" OR type=");
-        where.append(Calls.MISSED_IMS_TYPE);
-        where.append(" OR type=");
         where.append(Calls.MISSED_WIFI_TYPE+")");
         where.append(" AND new=1");
         where.append(" AND is_read=0");
